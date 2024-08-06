@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Y2meta.app - Super Mario 64 Soundtrack - Super Mario 64 (Main Theme) (128 kbps).mp3-1144bc5496361e3a0e0f7573054c0f5f.mp3str"
+
+[deps]
+
+source_file="res://Musica/Y2meta.app - Super Mario 64 Soundtrack - Super Mario 64 (Main Theme) (128 kbps).mp3"
+dest_files=[ "res://.import/Y2meta.app - Super Mario 64 Soundtrack - Super Mario 64 (Main Theme) (128 kbps).mp3-1144bc5496361e3a0e0f7573054c0f5f.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,182 @@
+[gd_scene load_steps=15 format=2]
+
+[ext_resource path="res://Recursos/8-bit-pixel-art-sunset-beach-landscape-background-vector.jpg" type="Texture" id=1]
+[ext_resource path="res://Calificaciones/selector.gd" type="Script" id=2]
+[ext_resource path="res://Musica/Y2meta.app - Title Screen - Kirby Star Allies Music (128 kbps).mp3" type="AudioStream" id=3]
+[ext_resource path="res://Assets_PixelAdventure/Menu/Levels/01.png" type="Texture" id=4]
+[ext_resource path="res://Assets_PixelAdventure/Menu/Levels/03.png" type="Texture" id=5]
+[ext_resource path="res://Assets_PixelAdventure/Menu/Levels/04.png" type="Texture" id=6]
+[ext_resource path="res://Assets_PixelAdventure/Menu/Levels/06.png" type="Texture" id=7]
+[ext_resource path="res://Assets_PixelAdventure/Menu/Levels/09.png" type="Texture" id=8]
+[ext_resource path="res://Assets_PixelAdventure/Menu/Levels/50.png" type="Texture" id=9]
+[ext_resource path="res://Assets_PixelAdventure/Menu/Buttons/Previous.png" type="Texture" id=10]
+[ext_resource path="res://Assets_PixelAdventure/Menu/Levels/07.png" type="Texture" id=11]
+[ext_resource path="res://Assets_PixelAdventure/Menu/Levels/08.png" type="Texture" id=12]
+[ext_resource path="res://Assets_PixelAdventure/Menu/Levels/05.png" type="Texture" id=13]
+[ext_resource path="res://Assets_PixelAdventure/Menu/Levels/02.png" type="Texture" id=14]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="8-bit-pixel-art-sunset-beach-landscape-background-vector" type="Sprite" parent="."]
+position = Vector2( 525, 287 )
+scale = Vector2( 0.752041, 0.752041 )
+texture = ExtResource( 1 )
+
+[node name="Node" type="Node" parent="."]
+script = ExtResource( 2 )
+
+[node name="NIV1" type="Button" parent="Node"]
+anchor_bottom = 0.025
+margin_left = 22.0
+margin_top = 46.0
+margin_right = 202.0
+margin_bottom = 226.0
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color_focus = Color( 0, 0, 0, 1 )
+icon = ExtResource( 4 )
+flat = true
+clip_text = true
+expand_icon = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Niv2" type="Button" parent="Node"]
+margin_left = 223.0
+margin_top = 45.0
+margin_right = 403.0
+margin_bottom = 225.0
+icon = ExtResource( 14 )
+flat = true
+clip_text = true
+expand_icon = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="niv3" type="Button" parent="Node"]
+margin_left = 422.0
+margin_top = 45.0
+margin_right = 602.0
+margin_bottom = 225.0
+icon = ExtResource( 5 )
+flat = true
+expand_icon = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Niv4" type="Button" parent="Node"]
+margin_left = 617.0
+margin_top = 45.0
+margin_right = 797.0
+margin_bottom = 225.0
+icon = ExtResource( 6 )
+flat = true
+expand_icon = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="niv5" type="Button" parent="Node"]
+margin_left = 817.0
+margin_top = 45.0
+margin_right = 997.0
+margin_bottom = 225.0
+icon = ExtResource( 13 )
+flat = true
+expand_icon = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="niv6" type="Button" parent="Node"]
+margin_left = 21.0
+margin_top = 310.0
+margin_right = 201.0
+margin_bottom = 490.0
+icon = ExtResource( 7 )
+flat = true
+expand_icon = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="niv7" type="Button" parent="Node"]
+margin_left = 221.0
+margin_top = 310.0
+margin_right = 401.0
+margin_bottom = 490.0
+icon = ExtResource( 11 )
+flat = true
+expand_icon = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="niv8" type="Button" parent="Node"]
+margin_left = 421.0
+margin_top = 310.0
+margin_right = 601.0
+margin_bottom = 490.0
+icon = ExtResource( 12 )
+flat = true
+expand_icon = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="niv9" type="Button" parent="Node"]
+margin_left = 616.0
+margin_top = 310.0
+margin_right = 796.0
+margin_bottom = 490.0
+icon = ExtResource( 8 )
+flat = true
+expand_icon = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="niv10" type="Button" parent="Node"]
+margin_left = 816.0
+margin_top = 310.0
+margin_right = 996.0
+margin_bottom = 490.0
+icon = ExtResource( 9 )
+flat = true
+expand_icon = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Regresar" type="Button" parent="Node"]
+margin_top = 498.0
+margin_right = 100.0
+margin_bottom = 598.0
+icon = ExtResource( 10 )
+flat = true
+expand_icon = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+autoplay = true
+
+[connection signal="pressed" from="Node/NIV1" to="Node" method="_on_NIV1_pressed"]
+[connection signal="pressed" from="Node/Niv2" to="Node" method="_on_Niv2_pressed"]
+[connection signal="pressed" from="Node/niv3" to="Node" method="_on_niv3_pressed"]
+[connection signal="pressed" from="Node/Niv4" to="Node" method="_on_Niv4_pressed"]
+[connection signal="pressed" from="Node/niv5" to="Node" method="_on_niv5_pressed"]
+[connection signal="pressed" from="Node/niv6" to="Node" method="_on_niv6_pressed"]
+[connection signal="pressed" from="Node/niv7" to="Node" method="_on_niv7_pressed"]
+[connection signal="pressed" from="Node/niv8" to="Node" method="_on_niv8_pressed"]
+[connection signal="pressed" from="Node/niv9" to="Node" method="_on_niv9_pressed"]
+[connection signal="pressed" from="Node/Regresar" to="Node" method="_on_Regresar_pressed"]

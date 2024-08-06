@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Y2meta.app - Knight of the Wind - Sonic and the Black Knight [OST] (128 kbps).mp3-31eb0ac7632ee8650e170181fbd1d0a9.mp3str"
+
+[deps]
+
+source_file="res://Musica/Y2meta.app - Knight of the Wind - Sonic and the Black Knight [OST] (128 kbps).mp3"
+dest_files=[ "res://.import/Y2meta.app - Knight of the Wind - Sonic and the Black Knight [OST] (128 kbps).mp3-31eb0ac7632ee8650e170181fbd1d0a9.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

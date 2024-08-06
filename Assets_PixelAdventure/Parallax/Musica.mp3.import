@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Musica.mp3-f59db59adb4b51e7107f462ef83069ea.mp3str"
+
+[deps]
+
+source_file="res://Assets_PixelAdventure/Parallax/Musica.mp3"
+dest_files=[ "res://.import/Musica.mp3-f59db59adb4b51e7107f462ef83069ea.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

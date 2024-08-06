@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Monopoly (1995 PC Game) Soundtrack_ 6. Cruisin'  Download.mp3-73ac438aca13d5d430088da40b068dfc.mp3str"
+
+[deps]
+
+source_file="res://Musica/Monopoly (1995 PC Game) Soundtrack_ 6. Cruisin'  Download.mp3"
+dest_files=[ "res://.import/Monopoly (1995 PC Game) Soundtrack_ 6. Cruisin'  Download.mp3-73ac438aca13d5d430088da40b068dfc.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

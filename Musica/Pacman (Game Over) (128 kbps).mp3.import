@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Pacman (Game Over) (128 kbps).mp3-79f5ae8c4cf31d59d4d497681906a56a.mp3str"
+
+[deps]
+
+source_file="res://Musica/Pacman (Game Over) (128 kbps).mp3"
+dest_files=[ "res://.import/Pacman (Game Over) (128 kbps).mp3-79f5ae8c4cf31d59d4d497681906a56a.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

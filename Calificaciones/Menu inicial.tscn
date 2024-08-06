@@ -1,0 +1,59 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Musica/Y2meta.app - Title Screen - Kirby Star Allies Music (128 kbps).mp3" type="AudioStream" id=1]
+[ext_resource path="res://Recursos/360_F_572734671_nMzF1g7FlWdiWJ0KlJUpgGDpnJwPcceT.jpg" type="Texture" id=2]
+[ext_resource path="res://Calificaciones/inicio.gd" type="Script" id=3]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="360F572734671NMzF1G7FlWdiWj0KlJUpgGDpnJwPcceT" type="Sprite" parent="."]
+position = Vector2( 509, 308 )
+scale = Vector2( 1.91111, 1.91111 )
+texture = ExtResource( 2 )
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchor_left = 0.5
+anchor_top = 0.47
+anchor_right = 0.5
+anchor_bottom = 0.47
+margin_left = -154.0
+margin_top = -34.0
+margin_right = 154.0
+margin_bottom = 34.0
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Iniciar" type="Button" parent="VBoxContainer"]
+margin_right = 308.0
+margin_bottom = 20.0
+text = "Iniciar"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Select" type="Button" parent="VBoxContainer"]
+margin_top = 24.0
+margin_right = 308.0
+margin_bottom = 44.0
+text = "Seleccionar Nivel"
+
+[node name="Salir" type="Button" parent="VBoxContainer"]
+margin_top = 48.0
+margin_right = 308.0
+margin_bottom = 68.0
+text = "Salir"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 1 )
+autoplay = true
+
+[connection signal="pressed" from="VBoxContainer/Iniciar" to="VBoxContainer" method="_on_Iniciar_pressed"]
+[connection signal="pressed" from="VBoxContainer/Select" to="VBoxContainer" method="_on_Select_pressed"]
+[connection signal="pressed" from="VBoxContainer/Salir" to="VBoxContainer" method="_on_Salir_pressed"]

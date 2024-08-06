@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Crash Bandicoot 1 - N. Sanity Beach Mp3 (128 kbps).mp3-ac68388332128d0ce3ab74d41b9da75e.mp3str"
+
+[deps]
+
+source_file="res://Musica/Crash Bandicoot 1 - N. Sanity Beach Mp3 (128 kbps).mp3"
+dest_files=[ "res://.import/Crash Bandicoot 1 - N. Sanity Beach Mp3 (128 kbps).mp3-ac68388332128d0ce3ab74d41b9da75e.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

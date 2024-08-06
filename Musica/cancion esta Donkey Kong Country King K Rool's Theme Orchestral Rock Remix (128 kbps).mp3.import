@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/cancion esta Donkey Kong Country King K Rool's Theme Orchestral Rock Remix (128 kbps).mp3-e418eaea674113ffde5252041064e17d.mp3str"
+
+[deps]
+
+source_file="res://Musica/cancion esta Donkey Kong Country King K Rool's Theme Orchestral Rock Remix (128 kbps).mp3"
+dest_files=[ "res://.import/cancion esta Donkey Kong Country King K Rool's Theme Orchestral Rock Remix (128 kbps).mp3-e418eaea674113ffde5252041064e17d.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

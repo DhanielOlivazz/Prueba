@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Y2meta.app - Mario Jump Sound effects _ Efecto de sonido de salto de Mario (128 kbps).mp3-60e6f16f67528996eac6e5d5ac91773a.mp3str"
+
+[deps]
+
+source_file="res://Musica/Y2meta.app - Mario Jump Sound effects _ Efecto de sonido de salto de Mario (128 kbps).mp3"
+dest_files=[ "res://.import/Y2meta.app - Mario Jump Sound effects _ Efecto de sonido de salto de Mario (128 kbps).mp3-60e6f16f67528996eac6e5d5ac91773a.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/confirmation_002.ogg-0a77855146a27a2ff3936bbf0d705bc5.oggstr"
+
+[deps]
+
+source_file="res://Assets_PixelAdventure/Sounds/confirmation_002.ogg"
+dest_files=[ "res://.import/confirmation_002.ogg-0a77855146a27a2ff3936bbf0d705bc5.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0.0

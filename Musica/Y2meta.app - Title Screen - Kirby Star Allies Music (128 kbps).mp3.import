@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Y2meta.app - Title Screen - Kirby Star Allies Music (128 kbps).mp3-8d5a61f9c83788de49cdc8bfd246ccab.mp3str"
+
+[deps]
+
+source_file="res://Musica/Y2meta.app - Title Screen - Kirby Star Allies Music (128 kbps).mp3"
+dest_files=[ "res://.import/Y2meta.app - Title Screen - Kirby Star Allies Music (128 kbps).mp3-8d5a61f9c83788de49cdc8bfd246ccab.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
