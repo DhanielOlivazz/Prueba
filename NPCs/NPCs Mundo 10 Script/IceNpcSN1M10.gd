@@ -7,7 +7,7 @@ var left_limit = 2250
 var right_limit = 2500
 
 # Referencia al jugador
-onready var player = get_parent().get_node("Player")
+#onready var player = get_parent().get_node("Player")
 onready var animation_player = $AnimationPlayer
 #onready var songDie = $AudioStreamPlayer
 onready var Spritee = $Sprite

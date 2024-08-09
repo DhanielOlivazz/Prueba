@@ -1,17 +1,17 @@
 extends Area2D
 
-signal bounce
-
 # Variables para el movimiento
 var direction = Vector2(1, 0)
-var speed = 50
-var left_limit = 3700
-var right_limit = 3785
+var speed = 65
+var left_limit = 4670
+var right_limit = 4825
 
 # Referencia al jugador
 #onready var player = get_parent().get_node("Player")
+onready var animation_player = $AnimationPlayer
+onready var songDie = $AudioStreamPlayer
 onready var Spritee = $Sprite
-onready var audio = $AudioStreamPlayer
+onready var Spritee2 = $Sprite2
 
 func _ready():
 	set_process(true)
@@ -28,5 +28,12 @@ func _process(delta):
 
 func _on_NPC_body_entered(body):
 	if body.name == "Player":
-		emit_signal("bounce", body)
-		audio.play()
+		if body.is_on_top_of(self):
+			Spritee2.visible = true
+			Spritee.visible = false
+			songDie.play()
+			animation_player.play("dead")
+			yield(animation_player, "animation_finished")
+			queue_free()
+		else:
+			body.die()

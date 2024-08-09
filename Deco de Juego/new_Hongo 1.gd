@@ -5,8 +5,8 @@ signal bounce
 # Variables para el movimiento
 var direction = Vector2(1, 0)
 var speed = 50
-var left_limit = 3700
-var right_limit = 3785
+var left_limit = 3375
+var right_limit = 3500
 
 # Referencia al jugador
 #onready var player = get_parent().get_node("Player")

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Y2meta.app - Lounge - Monopoly iOS (128 kbps).mp3-da0cb2bc1f79dfd6c686deaaeb090bb4.mp3str"
+
+[deps]
+
+source_file="res://Musica/Y2meta.app - Lounge - Monopoly iOS (128 kbps).mp3"
+dest_files=[ "res://.import/Y2meta.app - Lounge - Monopoly iOS (128 kbps).mp3-da0cb2bc1f79dfd6c686deaaeb090bb4.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

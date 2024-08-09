@@ -2,7 +2,7 @@ extends Area2D
 
 # Variables para el movimiento
 var direction = Vector2(1, 0)
-var speed = 65
+var speed = 60
 var left_limit = 660
 var right_limit = 900
 

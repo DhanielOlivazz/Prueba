@@ -121,3 +121,11 @@ func _on_A1M9_body_entered(body):
 		print("Nos hemos caido")
 		get_tree().reload_current_scene()
 	pass 
+
+
+func _on_Plata_body_entered(body):
+	if body.get_name() == "Player":
+		print("Nos Hemos Estrellado")
+		get_tree().change_scene("res://Mundo/Mundo 10.tscn")
+		pass
+
