@@ -1,11 +1,14 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Assets_PixelAdventure/Main Characters/Mask Dude.png" type="Texture" id=1]
 [ext_resource path="res://player/Player.gd" type="Script" id=2]
-[ext_resource path="res://Musica/Y2meta.app - Mario Jump Sound effects _ Efecto de sonido de salto de Mario (128 kbps).mp3" type="AudioStream" id=3]
+[ext_resource path="res://Assets_PixelAdventure/Sounds/Jump.ogg" type="AudioStream" id=3]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 10.5, 14 )
+
+[sub_resource type="Animation" id=5]
+resource_name = "Jump"
 
 [sub_resource type="Animation" id=2]
 length = 0.001
@@ -68,9 +71,11 @@ position = Vector2( 0.5, 2 )
 shape = SubResource( 1 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/Jump = SubResource( 5 )
 anims/RESET = SubResource( 2 )
 anims/Walk = SubResource( 4 )
 anims/idle = SubResource( 3 )
 
 [node name="Jump" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 3 )
+volume_db = 7.0

@@ -1,0 +1,13 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+valid=false
+
+[deps]
+
+source_file="res://Musica/3 Efecto de Sonido Calamardo Caminando (128 kbps).mp3"
+[params]
+
+loop=true
+loop_offset=0

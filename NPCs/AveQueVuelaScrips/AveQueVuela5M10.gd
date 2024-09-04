@@ -2,9 +2,9 @@ extends Area2D
 
 # Variables para el movimiento
 var direction = Vector2(1, 0)  # Movimiento vertical
-var speed = 40
-var left_limit = 5200
-var right_limit = 5500
+var speed = 75
+var left_limit = 10100
+var right_limit = 10250
 
 # Referencia al jugador
 #onready var player = get_parent().get_node("Player")

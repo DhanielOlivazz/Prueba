@@ -1,12 +1,15 @@
 [gd_scene load_steps=8 format=2]
 
-[ext_resource path="res://Assets_PixelAdventure/Enemies/Radish/Hit (30x38).png" type="Texture" id=1]
-[ext_resource path="res://Assets_PixelAdventure/Enemies/Radish/Run (30x38).png" type="Texture" id=2]
-[ext_resource path="res://Musica/Y2meta.app - Calamardo Caminando efecto de sonido (128 kbps).mp3" type="AudioStream" id=3]
+[ext_resource path="res://Assets_PixelAdventure/Enemies/Trunk/Run (64x32).png" type="Texture" id=1]
+[ext_resource path="res://Troncos/Tree.gd" type="Script" id=2]
+[ext_resource path="res://Assets_PixelAdventure/Enemies/Trunk/Hit (64x32).png" type="Texture" id=3]
 
-[sub_resource type="Animation" id=1]
-resource_name = "DEAD"
-length = 0.3
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 12.5, 12.5 )
+
+[sub_resource type="Animation" id=4]
+resource_name = "Dead"
+length = 0.5
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite2:frame")
 tracks/0/interp = 1
@@ -14,10 +17,10 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.1, 0.2 ),
-"transitions": PoolRealArray( 1, 1, 1 ),
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
 "update": 1,
-"values": [ 3, 2, 1 ]
+"values": [ 4, 3, 2, 1, 0 ]
 }
 
 [sub_resource type="Animation" id=2]
@@ -49,7 +52,7 @@ tracks/1/keys = {
 
 [sub_resource type="Animation" id=3]
 resource_name = "Walk"
-length = 0.95
+length = 1.04
 loop = true
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:frame")
@@ -58,40 +61,32 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9 ),
-"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
 "update": 1,
-"values": [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+"values": [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12 ]
 }
 
-[sub_resource type="RectangleShape2D" id=4]
-extents = Vector2( 12, 15 )
-
-[node name="Area2D" type="Area2D"]
-
-[node name="Sprite" type="Sprite" parent="."]
-texture = ExtResource( 2 )
-flip_h = true
-hframes = 12
+[node name="Tronco" type="Area2D"]
+script = ExtResource( 2 )
 
 [node name="Sprite2" type="Sprite" parent="."]
 visible = false
-texture = ExtResource( 1 )
+texture = ExtResource( 3 )
 hframes = 5
 frame = 4
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-autoplay = "Walk"
-anims/DEAD = SubResource( 1 )
-anims/RESET = SubResource( 2 )
-anims/Walk = SubResource( 3 )
+[node name="Sprite" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+hframes = 14
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 0, 1 )
-shape = SubResource( 4 )
+position = Vector2( 0.5, 2.5 )
+shape = SubResource( 1 )
 
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource( 3 )
-volume_db = 18.0
-autoplay = true
-max_distance = 1000.0
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "Walk"
+reset_on_save = false
+anims/Dead = SubResource( 4 )
+anims/RESET = SubResource( 2 )
+anims/Walk = SubResource( 3 )

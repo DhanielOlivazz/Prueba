@@ -4,7 +4,7 @@
 [ext_resource path="res://NPCs/NPC1.gd" type="Script" id=2]
 [ext_resource path="res://Assets_PixelAdventure/Enemies/Slime/Hit (44x30).png" type="Texture" id=3]
 [ext_resource path="res://Musica/Minecraft Slime Sound Effects! - All Slime SFX For Editing! (128 kbps).mp3" type="AudioStream" id=4]
-[ext_resource path="res://Musica/Pacman (Game Over) (128 kbps).mp3" type="AudioStream" id=5]
+[ext_resource path="res://Assets_PixelAdventure/Sounds/Hit.ogg" type="AudioStream" id=5]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 10, 9 )
@@ -189,3 +189,4 @@ max_distance = 300.0
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 5 )
+volume_db = 1.0

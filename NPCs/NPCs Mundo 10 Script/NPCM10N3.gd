@@ -1,18 +1,20 @@
 extends Area2D
 
 # Variables para el movimiento
-var direction = Vector2(1, 0)  # Movimiento vertical
-var speed = 40
-var left_limit = 5200
-var right_limit = 5500
+var direction = Vector2(1, 0)
+var speed = 65
+var left_limit = 5825
+var right_limit = 5900
 
 # Referencia al jugador
 #onready var player = get_parent().get_node("Player")
 onready var animation_player = $AnimationPlayer
+#onready var songDie = $AudioStreamPlayer
 onready var Spritee = $Sprite
-#onready var audio = $AudioStreamPlayer2D
+onready var Spritee2 = $Sprite2
 
 func _ready():
+	set_process(true)
 	connect("body_entered", self, "_on_NPC_body_entered")
 
 func _process(delta):
@@ -26,5 +28,12 @@ func _process(delta):
 
 func _on_NPC_body_entered(body):
 	if body.name == "Player":
-		print("nOS HAN PICOTEADO:D")
-		get_tree().reload_current_scene() 
+		if body.is_on_top_of(self):
+			Spritee2.visible = true
+			Spritee.visible = false
+			#songDie.play()
+			animation_player.play("DEAD")
+			yield(animation_player, "animation_finished")
+			queue_free()
+		else:
+			body.die()

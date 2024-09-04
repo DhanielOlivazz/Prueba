@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Y2meta.app - Calamardo Caminando efecto de sonido (128 kbps).mp3-e068398f8da9b8f19d7ee0ee3db2f216.mp3str"
+
+[deps]
+
+source_file="res://Musica/Y2meta.app - Calamardo Caminando efecto de sonido (128 kbps).mp3"
+dest_files=[ "res://.import/Y2meta.app - Calamardo Caminando efecto de sonido (128 kbps).mp3-e068398f8da9b8f19d7ee0ee3db2f216.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
