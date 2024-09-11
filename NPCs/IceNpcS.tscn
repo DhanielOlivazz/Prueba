@@ -67,7 +67,7 @@ tracks/0/keys = {
 [sub_resource type="RectangleShape2D" id=4]
 extents = Vector2( 12, 15 )
 
-[node name="Area2D" type="Area2D"]
+[node name="Area2D" type="Area2D" groups=["Npc."]]
 
 [node name="Sprite" type="Sprite" parent="."]
 texture = ExtResource( 2 )

@@ -5,6 +5,7 @@ const moveSpeed = 70
 
 const jumpHeight = 450
 const trampolineBoost = 600  # Añadimos una variable específica para el impulso del trampolín
+const golpeDeNpc = 200
 const up = Vector2(0, -1)
 const gravity = 15
 var is_dead = false
@@ -18,6 +19,9 @@ func _ready():
 	set_process(true)
 	for trampoline in get_tree().get_nodes_in_group("Trampolines"):  # Asegurarse de que coincide con el grupo
 		trampoline.connect("bounce", self, "_on_Trampoline_bounce")
+	set_process(true)
+	for np in get_tree().get_nodes_in_group("Npc."):  # Asegurarse de que coincide con el grupo
+		np.connect("coli", self, "_on_Npc_col")
 
 func _physics_process(delta):
 	motion.y += gravity
@@ -66,3 +70,8 @@ func _on_Trampoline_bounce(body):
 		print("El Jugador Reboto")
 		# Elevar al jugador con un impulso mayor específico del trampolín
 		motion.y = -trampolineBoost
+
+func _on_Npc_col(body):
+	if body == self:
+		print("el npc murio :( Q.E.P.D )")
+		motion.y = -golpeDeNpc
